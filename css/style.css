@@ -39,26 +39,37 @@ h1 {
   font-family: Regular, "sans-serif";
   font-size: 33px;
 }
-h2 {
-  font-family: Regular, "sans-serif";
-  font-size: 20px;
-}
 h3 {
   font-family: Regular, "sans-serif";
   font-size: 17px;
 }
-b {
-    font-family: TextBold, "sans-serif";
+p {
+  font-family: TextRegular, "sans-serif";
+  font-size: 15.333px;
+}
+p b {
+  font-family: TextBold, "sans-serif";
+}
+p i {
+  font-family: TextRegularItalic, "sans-serif";
 }
 span {
   font-family: MonoRegular, "mono";
   font-size: 14px;
 }
 span b {
-    font-family: MonoMedium, "sans-serif";
+  font-family: MonoMedium, "sans-serif";
 }
 a {
-    color: inherit;
+  color: inherit;
+}
+iframe {
+  width: 1280px;
+  height: 720px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /*----------------------------------------HOME----------------------------------------*/
@@ -168,4 +179,27 @@ div.blu {background-color: #68acca}
 .active {
   background-color: #000;
   color: #e7b5b9;
+}
+
+/*----------------------------------------SWIPER----------------------------------------*/
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.swiper-container p {
+  margin-top: 13px;
+  margin-bottom: 53px;
+}
+.swiper-button-prev {
+  margin-left: 17px;
+  background-image: url("../img/naviga-sx.png")!important;
+}
+.swiper-button-next {
+  margin-right: 17px;
+  background-image: url("../img/naviga-dx.png")!important;
+}
+.swiper-button-prev, .swiper-button-next {
+  transform-origin: center;
+  transform: scaleX(1.6) translateY(-30px);
 }

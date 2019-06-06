@@ -37,6 +37,25 @@ $('.button').click(function() {
     $('.div'+$(this).attr('target')).show();
 });
 
+// SWIPER PISIS
+
+var swiper1 = new Swiper (".swiper-container", {
+
+  direction: "horizontal",
+  loop: true,
+  speed: 1000,
+  autoHeight: false,
+
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  autoplay: {
+  delay: 5000,
+  disableOnInteraction: false,
+  },
+})
+
 // EVENTI
 var eventi1 = $('#eventi1').offset().top;
 var eventi2 = $('#eventi2').offset().top;
