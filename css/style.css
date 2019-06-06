@@ -1,0 +1,171 @@
+@charset "utf-8";
+
+/*----------------------------------------BROWSER----------------------------------------*/
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/*----------------------------------------FONT----------------------------------------*/
+
+@font-face {font-family: TextRegular; src: url(../fonts/FoundersGroteskTextRegular.otf)}
+@font-face {font-family: TextRegularItalic; src: url(../fonts/FoundersGroteskTextRegularItalic.otf)}
+@font-face {font-family: TextBold; src: url(../fonts/FoundersGroteskTextBold.otf)}
+@font-face {font-family: Regular; src: url(../fonts/FoundersGroteskRegular.otf)}
+@font-face {font-family: RegularItalic; src: url(../fonts/FoundersGroteskRegularItalic.otf)}
+@font-face {font-family: Medium; src: url(../fonts/FoundersGroteskMedium.otf)}
+@font-face {font-family: MonoRegular;src: url(../fonts/FoundersGroteskMonoRegular.otf)}
+@font-face {font-family: MonoMedium; src: url(../fonts/FoundersGroteskMonoMedium.otf)}
+
+/*----------------------------------------GENERAL----------------------------------------*/
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-weight: normal;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  font-family: TextRegular, "sans-serif";
+  background-color: #000;
+  color: #000;
+}
+img {
+  max-width: 100%;
+}
+h1 {
+  font-family: Regular, "sans-serif";
+  font-size: 33px;
+}
+h2 {
+  font-family: Regular, "sans-serif";
+  font-size: 20px;
+}
+h3 {
+  font-family: Regular, "sans-serif";
+  font-size: 17px;
+}
+b {
+    font-family: TextBold, "sans-serif";
+}
+span {
+  font-family: MonoRegular, "mono";
+  font-size: 14px;
+}
+span b {
+    font-family: MonoMedium, "sans-serif";
+}
+a {
+    color: inherit;
+}
+
+/*----------------------------------------HOME----------------------------------------*/
+
+.sezione {
+  width: 1280px;
+  height: 720px !important;
+  padding: 53px 80px;
+  display: grid;
+  grid-template-columns: repeat(9, 100px);
+  grid-template-rows: 27px auto;
+  grid-gap: 27px;
+}
+div.giallo {background-color: #fef0cf}
+div.verde {background-color: #92bb9c}
+div.rosso {background-color: #e7b5b9}
+div.blu {background-color: #68acca}
+
+.home-header {
+  background: #000 url("../img/home.jpeg") no-repeat center;
+  background-size: cover;
+  color: #fef0cf;
+  text-align: center;
+  position: relative;
+}
+.home-verde {
+  background: #000 url("../img/vaso.jpg") no-repeat center;
+  background-size: cover;
+  color: #fef0cf;
+  padding: 27px;
+  transition: background-image .3s linear;
+}
+.home-header > h1 {
+  position: absolute;
+  bottom: 17px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.quadrati > a {
+  margin-bottom: 27px;
+  display: block;
+}
+.q {
+  width: 100px;
+  height: 100px;
+  border: solid 1.25px #000;
+  border-left: none;
+  position: relative;
+  transition: all .2s linear;
+}
+.q h3 {
+  margin-top: 13px;
+  line-height: 1.1;
+  transition: margin-left .2s ease-in-out;
+}
+.q svg {
+  position: absolute; right: 13px; bottom: 13px;
+  width: 24px;
+  fill: #000;
+}
+.q:hover {background-color: #000}
+.q:hover h3 {margin-left: 13px}
+.giallo .q:hover {color: #fef0cf}
+.verde .q:hover {color: #92bb9c}
+.rosso .q:hover {color: #e7b5b9}
+.blu .q:hover {color: #68acca}
+.giallo .q:hover svg {fill: #fef0cf}
+.verde .q:hover svg {fill: #92bb9c}
+.rosso .q:hover svg {fill: #e7b5b9}
+.blu .q:hover svg {fill: #68acca}
+
+.underline {
+  position: relative;
+}
+.underline::before {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  width: 100%;
+  height: 1.25px;
+  background-color: #000;
+  visibility: hidden;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: .3s ease-in-out;
+}
+.underline:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+.zoom img {
+  transition: transform .2s ease-in-out;
+}
+.zoom img:hover {
+  transform: scale(.98);
+}
+.button {
+  background-color: transparent;
+  border: solid 1.25px #000;
+  padding: 8.6px 18px;
+  text-align: center;
+  font-size: 17px;
+  margin-right: 17px;
+  cursor: pointer;
+  transition: all .2s linear;
+}
+.active {
+  background-color: #000;
+  color: #e7b5b9;
+}
