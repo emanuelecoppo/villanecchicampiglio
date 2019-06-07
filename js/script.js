@@ -1,10 +1,26 @@
-// SCROLLIFY
+// RESIZE
+function adatta() {
+  h = $(window).height();
+  w = $(window).width();
+  if (h>0.5625*w) {
+    $('.wrap').css('transform','translate(-50%, -50%) scale('+ w/1280 +')')
+  } else {
+    $('.wrap').css('transform','translate(-50%, -50%) scale('+ h/720 +')')
+  }
+}
+adatta();
+$(window).resize(function() {adatta()} );
+
+//SCROLLIFY
 $.scrollify({
   section : ".scroll",
+  sectionName : "",
+  interstitialSection : "",
   easing: "easeOutExpo",
-  scrollSpeed: 1500,
+  scrollSpeed: 1100,
   offset : 0,
   scrollbars: true,
+  standardScrollElements: "",
   setHeights: false,
   overflowScroll: true,
   updateHash: false,
@@ -37,10 +53,8 @@ $('.button').click(function() {
     $('.div'+$(this).attr('target')).show();
 });
 
-// SWIPER PISIS
-
+// SWIPER
 var swiper1 = new Swiper (".swiper-container", {
-
   direction: "horizontal",
   loop: true,
   speed: 1000,
