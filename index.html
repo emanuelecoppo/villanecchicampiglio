@@ -25,7 +25,7 @@
   function adatta() {
     h = $(window).height();
     w = $(window).width();
-    if (h>0.5625*w) {
+    if (h > 0.5625*w) {
       $('iframe').css('transform','translate(-50%, -50%) scale('+ w/1280 +')')
     } else {
       $('iframe').css('transform','translate(-50%, -50%) scale('+ h/720 +')')

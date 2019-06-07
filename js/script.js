@@ -1,3 +1,20 @@
+// DATE
+const months = ["GEN","FEB","MAR","APR","MAG","GIU","LUG","AGO","SET","OTT","NOV","DIC"];
+var time = new Date();
+var current_datetime = new Date();
+var formatted_date = current_datetime.getDate() + " " + months[current_datetime.getMonth()] + ", " + ("0" + time.getHours()).slice(-2) + ":" + ("0" + time.getMinutes()).slice(-2);
+document.getElementById("date").innerHTML = formatted_date;
+
+// NAV
+$(".drop").hover(
+  function () {
+    $(this).find('.submenu').stop(true, true).slideDown('medium');
+  },
+  function () {
+    $(this).find('.submenu').stop(true,true).slideUp('medium');
+  }
+);
+
 //SCROLLIFY
 $.scrollify({
   section : ".scroll",

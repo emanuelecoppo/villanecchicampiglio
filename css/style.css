@@ -196,3 +196,51 @@ div.blu {background-color: #68acca}
   transform-origin: center;
   transform: scaleX(1.6) translateY(-30px);
 }
+
+/*----------------------------------------NAVBAR----------------------------------------*/
+
+#data {
+  position:fixed;
+  bottom:53px;
+  left:80px
+}
+#logo {
+  position:fixed;
+  top:53px;
+  left:80px;
+  width: 180px;
+}
+nav {
+  position: fixed;
+  top: 180px;
+  left: 117px;
+  width: 180px;
+  font-family: MonoMedium;
+  font-size: 20px;
+}
+nav * {
+  list-style: none;
+}
+nav a {
+  margin-bottom: 17px;
+  display: block;
+}
+.submenu {
+  margin-top: 17px;
+  margin-left: 20px;
+  font-family: MonoRegular;
+  font-size: 15px;
+  display: none;
+  text-transform: uppercase;
+  position: relative;
+  padding-left: 20px;
+}
+.submenu::before {
+  content: "";
+  height: 80px;
+  width: 2px;
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  left: 0px;
+}
