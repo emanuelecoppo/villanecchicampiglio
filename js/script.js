@@ -1,16 +1,3 @@
-// RESIZE
-function adatta() {
-  h = $(window).height();
-  w = $(window).width();
-  if (h>0.5625*w) {
-    $('.wrap').css('transform','translate(-50%, -50%) scale('+ w/1280 +')')
-  } else {
-    $('.wrap').css('transform','translate(-50%, -50%) scale('+ h/720 +')')
-  }
-}
-adatta();
-$(window).resize(function() {adatta()} );
-
 //SCROLLIFY
 $.scrollify({
   section : ".scroll",
