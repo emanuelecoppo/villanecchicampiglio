@@ -11,7 +11,15 @@ $(".drop").hover(
     $(this).find('.submenu').stop(true, true).slideDown('medium');
   },
   function () {
-    $(this).find('.submenu').stop(true,true).slideUp('medium');
+    $(this).find('.submenu').stop(true, true).slideUp('medium');
+  }
+);
+$(".select").hover(
+  function () {
+    $(this).find('.select-content').stop(true, true).slideDown('medium');
+  },
+  function () {
+    $(this).find('.select-content').stop(true, true).slideUp('medium');
   }
 );
 

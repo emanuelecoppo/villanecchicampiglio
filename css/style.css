@@ -138,6 +138,30 @@ div.blu {background-color: #68acca}
   background-color: #000;
   color: #e7b5b9;
 }
+.select {
+  z-index: 2;
+  position: absolute;
+  top: 53px;
+  right: 84px;
+}
+.select span {
+  color: #92bb9c;
+  background-color: #000;
+  border: solid 1.25px #000;
+  display: block;
+  padding: 8.6px;
+  width: 200px;
+  text-align: center;
+  font-size: 17px;
+  cursor: pointer;
+}
+.select-content {
+  display: none;
+}
+.select-content span:hover {
+  background-color: #92bb9c;
+  color: #000;
+}
 
 /*----------------------------------------QUADRATI----------------------------------------*/
 
@@ -179,6 +203,7 @@ div.blu {background-color: #68acca}
 .swiper-container {
   width: 100%;
   height: 100%;
+  background-color: #000;
 }
 .swiper-container p {
   margin-top: 13px;
@@ -186,15 +211,25 @@ div.blu {background-color: #68acca}
 }
 .swiper-button-prev {
   margin-left: 17px;
-  background-image: url("../img/naviga-sx.png")!important;
+  background-image: url("../img/sx-rossa.png")!important;
 }
 .swiper-button-next {
   margin-right: 17px;
-  background-image: url("../img/naviga-dx.png")!important;
+  background-image: url("../img/dx-rossa.png")!important;
 }
 .swiper-button-prev, .swiper-button-next {
   transform-origin: center;
   transform: scaleX(1.6) translateY(-30px);
+}
+.swiper-button-prev.green {
+  background-image: url("../img/sx-verde.png")!important;
+}
+.swiper-button-next.green {
+  background-image: url("../img/dx-verde.png")!important;
+}
+.swiper-button-prev.green, .swiper-button-next.green {
+  transform-origin: center;
+  transform: scaleX(1.6);
 }
 
 /*----------------------------------------NAVBAR----------------------------------------*/

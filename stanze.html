@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ESPLORA ▪ Villa Necchi Campiglio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/swiper.min.css">
+</head>
+<body style="background-color: #92bb9c">
+
+  <span id="data"><span id="date"></span><br><b>APERTO</b></span>
+  <a href="home.html"><img id="logo" src="img/logo.svg"></a>
+  <nav class="menu">
+      <a href="home.html">HOME</a>
+      <div class="drop">
+        <a href="javascript:">ESPLORA</a>
+          <div class="submenu">
+            <a href="stanze.html">Le stanze</a>
+            <a href="giardino.html">Il giardino</a>
+            <a href="storia.html">Storia</a>
+          </div>
+      </div>
+      <a href="eventi.html">EVENTI</a>
+      <div class="drop">
+        <a href="javascript:">VISITA</a>
+        <div class="submenu">
+          <a href="biglietti.html">Biglietti</a>
+          <a href="arrivare.html">Come arrivare</a>
+          <a href="javascript:" onclick="$.scrollify.move('#5')">Orari</a>
+        </div>
+      <a href="home.html#4">NEWS</a>
+      </div>
+      <a target="_blank" href="https://sostienici.fondoambiente.it">SUPPORTA</a>
+      <a href="javascript:" onclick="$.scrollify.move('#5')">CONTATTI</a>
+  </nav>
+
+<!--HEADER-->
+<div class="sezione verde scroll">
+  <h1 style="grid-area:1/3/auto/9">Esplora</h1>
+
+  <div class="select">
+    <span class="select-button">VERANDA 🡣</span>
+    <div class="select-content">
+    <span>ATRIO</span>
+    <span>BIBLIOTECA</span>
+    <span>SALONE</span>
+    <span>VERANDA</span>
+    <span>STUDIO</span>
+    <span>FUMOIR</span>
+    <span>SALA DA<br>PRANZO</span>
+    <span>BAGNI</span>
+    <span>CAMERA<br>DEGLI SPOSI</span>
+    <span>CAMERA<br>DI NEDDA</span>
+    <span>CAMERA DEL<br>PRINCIPE</span>
+    <span>CAMERA DELLA<br>PRINCIPESSA<br>&nbsp;</span>
+    </div>
+  </div>
+
+  <div class="swiper-container" style="grid-area:2/3/auto/10">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="img/veranda1.png"></div>
+      <div class="swiper-slide"><img src="img/veranda2.jpg"></div>
+      <div class="swiper-slide"><img src="img/veranda3.jpg"></div>
+    </div>
+    <div class="swiper-button-prev green"></div>
+    <div class="swiper-button-next green"></div>
+  </div>
+</div>
+
+<!--INFO-->
+<div class="sezione verde scroll">
+  <a style="grid-area:1/3/auto/9"><img src="img/notizia-info.png"></a>
+  <div class="quadrati fixed" style="grid-area:1/9/auto/auto">
+    <a href="javascript:"><div class="q"><h3>News</h3><svg viewBox='0 0 36.43555 33.43555'><polygon points='19.707 0 18.293 1.414 32.586 15.707 0 15.707 0 17.707 32.479 17.707 17.314 31.979 18.686 33.436 36.436 16.729 19.707 0'/></svg></div></a>
+    <a href="javascript:"><div class="q"><h3>Archivio</h3><svg viewBox='0 0 36.43555 33.43555'><polygon points='19.707 0 18.293 1.414 32.586 15.707 0 15.707 0 17.707 32.479 17.707 17.314 31.979 18.686 33.436 36.436 16.729 19.707 0'/></svg></div></a>
+  </div>
+</div>
+
+<!--FOOTER-->
+<div class="sezione giallo scroll">
+  <h1 style="grid-area:1/3/auto/9">Visita la Villa</h1>
+  <img src="img/footer2.png" style="grid-area:2/3/auto/10">
+  <div class="quadrati" style="grid-area:2/9/auto/auto">
+    <a href="biglietti.html"><div class="q"><h3>Acquista<br>biglietti</h3><svg viewBox='0 0 36.43555 33.43555'><polygon points='19.707 0 18.293 1.414 32.586 15.707 0 15.707 0 17.707 32.479 17.707 17.314 31.979 18.686 33.436 36.436 16.729 19.707 0'/></svg></div></a>
+    <a href="arrivare.html"><div class="q"><h3>Come<br>arrivare</h3><svg viewBox='0 0 36.43555 33.43555'><polygon points='19.707 0 18.293 1.414 32.586 15.707 0 15.707 0 17.707 32.479 17.707 17.314 31.979 18.686 33.436 36.436 16.729 19.707 0'/></svg></div></a>
+  </div>
+</div>
+
+<!--SCRIPT-->
+<script src="js/swiper.min.js"></script>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/scrollify.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
