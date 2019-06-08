@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#000000">
+  <title>HOME ▪ Villa Necchi Campiglio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/mobile.css">
+  <link rel="stylesheet" href="css/swiper.min.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <img src="img/logo.svg">
+  <a class="hamburger" href="#">
+    <div class="stripe"></div>
+    <div class="stripe"></div>
+  </a>
+  <nav class="responsive off">
+    <a href="m-home.html">HOME</a>
+    <div class="drop">
+      <a href="javascript:">ESPLORA ></a>
+        <div class="submenu">
+          <a href="m-stanze.html">Le stanze</a>
+          <a href="m-giardino.html">Il giardino</a>
+          <a href="m-storia.html">Storia</a>
+        </div>
+    </div>
+    <a href="eventi.html">EVENTI</a>
+    <a href="notizia.html">NEWS</a>
+    <div class="drop">
+      <a href="javascript:">VISITA ></a>
+        <div class="submenu">
+          <a href="m-biglietti.html">Biglietti</a>
+          <a href="m-arrivare.html">Come arrivare</a>
+          <a href="javascript:" onclick="scrollBottom()">Orari</a>
+        </div>
+    </div>
+    <a target="_blank" href="https://sostienici.fondoambiente.it">SUPPORTA</a>
+    <a href="javascript:" onclick="scrollBottom()">CONTATTI</a>
+    <span id="data"><span id="date"></span><br><b>APERTO</b></span>
+  </nav>
+</nav>
+
+<!--HEADER-->
+<div class="sezione giallo" style="padding-top: 15vw">
+  <div class="home-header">
+    <img src="img/freccia-gialla.svg">
+  </div>
+</div>
+
+<!--SCOPRI-->
+<div class="sezione verde">
+
+  <h1 class="padding">Scopri la Villa</h1>
+  <div class="home-verde"></div>
+
+  <div class="quadrati padding">
+    <a href="veranda.html"><div class="q stanze"><h3>Le stanze</h3><svg viewBox='0 0 36.43555 33.43555'><polygon points='19.707 0 18.293 1.414 32.586 15.707 0 15.707 0 17.707 32.479 17.707 17.314 31.979 18.686 33.436 36.436 16.729 19.707 0'/></svg></div></a>
+    <a href="giardino.html"><div class="q giardino"><h3>Il giardino</h3><svg viewBox='0 0 36.43555 33.43555'><polygon points='19.707 0 18.293 1.414 32.586 15.707 0 15.707 0 17.707 32.479 17.707 17.314 31.979 18.686 33.436 36.436 16.729 19.707 0'/></svg></div></a>
+    <a href="storia.html"><div class="q storia"><h3>Storia</h3><svg viewBox='0 0 36.43555 33.43555'><polygon points='19.707 0 18.293 1.414 32.586 15.707 0 15.707 0 17.707 32.479 17.707 17.314 31.979 18.686 33.436 36.436 16.729 19.707 0'/></svg></div></a>
+  </div>
+</div>
+
+<!--EVENTI-->
+<div class="sezione rosso padding">
+  <h1>Eventi&nbsp;&nbsp;&nbsp;&nbsp;<a href="eventi.html" class="underline"><span>VEDI TUTTI 🡢</span></a></h1>
+  <a class="zoom" href="pisis.html"><img src="img/mobile/eventi1.png"></a>
+  <a class="zoom" href="javascript:"><img src="img/mobile/eventi1.png"></a>
+  <a class="zoom" href="javascript:"><img src="img/mobile/eventi1.png"></a>
+  <div class="quadrati">
+    <a href="javascript:"><div class="q"><h3>Shop</h3><svg viewBox='0 0 36.43555 33.43555'><polygon points='19.707 0 18.293 1.414 32.586 15.707 0 15.707 0 17.707 32.479 17.707 17.314 31.979 18.686 33.436 36.436 16.729 19.707 0'/></svg></div></a>
+    <a href="javascript:"><div class="q"><h3>Ristorante</h3><svg viewBox='0 0 36.43555 33.43555'><polygon points='19.707 0 18.293 1.414 32.586 15.707 0 15.707 0 17.707 32.479 17.707 17.314 31.979 18.686 33.436 36.436 16.729 19.707 0'/></svg></div></a>
+    <a href="eventi.html"><div class="q"><h3>Eventi</h3><svg viewBox='0 0 36.43555 33.43555'><polygon points='19.707 0 18.293 1.414 32.586 15.707 0 15.707 0 17.707 32.479 17.707 17.314 31.979 18.686 33.436 36.436 16.729 19.707 0'/></svg></div></a>
+  </div>
+</div>
+
+<!--NEWS-->
+<div class="sezione blu padding">
+  <h1 >News&nbsp;&nbsp;&nbsp;&nbsp;<a href="javascript:" class="underline"><span>ARCHIVIO 🡢</span></h1>
+  <a class="zoom" href="notizia.html"><img src="img/mobile/news1.png"></a>
+  <a class="zoom" href="javascript:"><img src="img/mobile/news1.png"></a>
+  <a class="zoom" href="javascript:"><img src="img/mobile/news1.png"></a>
+</div>
+
+<!--FOOTER-->
+<div class="sezione giallo padding">
+  <h1>Visita la Villa</h1>
+  <img src="img/footer2.png">
+  <div class="quadrati">
+    <a href="biglietti.html"><div class="q"><h3>Acquista<br>biglietti</h3><svg viewBox='0 0 36.43555 33.43555'><polygon points='19.707 0 18.293 1.414 32.586 15.707 0 15.707 0 17.707 32.479 17.707 17.314 31.979 18.686 33.436 36.436 16.729 19.707 0'/></svg></div></a>
+    <a href="arrivare.html"><div class="q"><h3>Come<br>arrivare</h3><svg viewBox='0 0 36.43555 33.43555'><polygon points='19.707 0 18.293 1.414 32.586 15.707 0 15.707 0 17.707 32.479 17.707 17.314 31.979 18.686 33.436 36.436 16.729 19.707 0'/></svg></div></a>
+  </div>
+</div>
+
+<!--SCRIPT-->
+<script src="js/swiper.min.js"></script>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/mobile.js"></script>
+
+</body>
+</html>

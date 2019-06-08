@@ -80,14 +80,14 @@ div.rosso {background-color: #e7b5b9}
 div.blu {background-color: #68acca}
 
 .home-header {
-  background: #000 url("../img/home.jpeg") no-repeat center;
+  background: url("../img/home.jpeg") no-repeat center;
   background-size: cover;
   color: #fef0cf;
   text-align: center;
   position: relative;
 }
 .home-verde {
-  background: #000 url("../img/vaso.jpg") no-repeat center;
+  background: url("../img/vaso.jpg") no-repeat center;
   background-size: cover;
   color: #fef0cf;
   padding: 27px;
@@ -203,7 +203,6 @@ div.blu {background-color: #68acca}
 .swiper-container {
   width: 100%;
   height: 100%;
-  background-color: #000;
 }
 .swiper-container p {
   margin-top: 13px;
@@ -252,9 +251,6 @@ nav {
   width: 180px;
   font-family: MonoMedium;
   font-size: 20px;
-}
-nav * {
-  list-style: none;
 }
 nav a {
   margin-bottom: 17px;

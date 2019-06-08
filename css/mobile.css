@@ -1,0 +1,260 @@
+@charset "utf-8";
+
+/*----------------------------------------GENERAL----------------------------------------*/
+
+h1 {
+  font-size: 8vw;
+}
+h3 {
+  font-size: 5vw;
+}
+p {
+  font-size: 15.333px;
+}
+span {
+  font-size: 3.5vw;
+}
+
+/*----------------------------------------SITO----------------------------------------*/
+
+.sezione {
+  width: 100vw;
+  height: auto;
+  display: block;
+  padding: 0;
+}
+.padding {
+  padding: 10vw 5vw;
+}
+.home-header {
+  width: 100vw;
+  height: 160vw;
+}
+.home-verde {
+  background: url("../img/vaso.jpg") no-repeat center;
+  background-size: cover;
+  padding: 0;
+  width: 100vw;
+  height: 100vw;
+}
+.home-header > img {
+  width: 8vw;
+  cursor: pointer;
+  position: absolute;
+  bottom: 7vw;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.underline {
+  position: relative;
+}
+.underline::before {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  width: 100%;
+  height: 1.25px;
+  background-color: #000;
+  visibility: hidden;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: .3s ease-in-out;
+}
+.underline:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+.zoom img {
+  transition: transform .2s ease-in-out;
+}
+.zoom img:hover {
+  transform: scale(.98);
+}
+.button {
+  background-color: transparent;
+  border: solid 1.25px #000;
+  padding: 8.6px 18px;
+  text-align: center;
+  font-size: 17px;
+  margin-right: 17px;
+  cursor: pointer;
+  transition: all .2s linear;
+}
+.active {
+  background-color: #000;
+  color: #e7b5b9;
+}
+.select {
+  z-index: 2;
+  position: absolute;
+  top: 53px;
+  right: 84px;
+}
+.select span {
+  color: #92bb9c;
+  background-color: #000;
+  border: solid 1.25px #000;
+  display: block;
+  padding: 8.6px;
+  width: 200px;
+  text-align: center;
+  font-size: 17px;
+  cursor: pointer;
+}
+.select-content {
+  display: none;
+}
+.select-content span:hover {
+  background-color: #92bb9c;
+  color: #000;
+}
+
+/*----------------------------------------QUADRATI----------------------------------------*/
+
+.quadrati > a {
+  margin-right: 4.1vw;
+  display: inline-block;
+}
+.quadrati > a:last-child {
+  margin-right: 0;
+}
+.q {
+  width: 27vw;
+  height: 27vw;
+  border: solid .35vw #000;
+}
+.q h3 {
+  margin-top: 12%;
+  margin-left: 10%;
+  line-height: 1.1;
+}
+.q svg {
+  position: absolute; right: 12%; bottom: 12%;
+  width: 25%;
+}
+.q:hover h3 {margin-left: 10%}
+
+/*----------------------------------------SWIPER----------------------------------------*/
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.swiper-container p {
+  margin-top: 13px;
+  margin-bottom: 53px;
+}
+.swiper-button-prev {
+  margin-left: 17px;
+  background-image: url("../img/sx-rossa.png")!important;
+}
+.swiper-button-next {
+  margin-right: 17px;
+  background-image: url("../img/dx-rossa.png")!important;
+}
+.swiper-button-prev, .swiper-button-next {
+  transform-origin: center;
+  transform: scaleX(1.6) translateY(-30px);
+}
+.swiper-button-prev.green {
+  background-image: url("../img/sx-verde.png")!important;
+}
+.swiper-button-next.green {
+  background-image: url("../img/dx-verde.png")!important;
+}
+.swiper-button-prev.green, .swiper-button-next.green {
+  transform-origin: center;
+  transform: scaleX(1.6);
+}
+
+/*----------------------------------------NAVBAR----------------------------------------*/
+
+.submenu {
+  margin-top: 0;
+  margin-left: 4vw;
+  font-size: 15px;
+  padding-left: 12vw;
+}
+.submenu::before {
+  content: "";
+  height: 80%;
+  width: .4vw;
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  left: 7vw;
+}
+nav {
+  z-index: 2;
+  width: 100%;
+  font-size: 1em;
+  top: 0; left: 0;
+  background-color: #fef0cf;
+  font-size: 20px;
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  padding: 0 4vw;
+}
+.navbar img {
+  float: left;
+  margin: 6vw 0vw;
+  height: 3.5vw;
+  transform-origin: left;
+  transform: scale(2.4);
+  cursor: pointer;
+}
+.responsive {
+  z-index: 3;
+  top: 15vw;
+  transition: left .5s;
+  height: 100vh;
+}
+.off {
+  left: 100%;
+}
+.hamburger {
+  display: block;
+  float: right;
+  margin: 6vw 0;
+}
+.stripe {
+  width: 7vw;
+  height: .5vw;
+  background-color: #000;
+  transition: transform .3s;
+}
+.stripe:first-child {
+  margin-bottom: 2vw;
+}
+.stripe:first-child.rotate {
+  transform: translateY(1.25vw) rotateZ(45deg);
+}
+.stripe:last-child.rotate {
+  transform: translateY(-1.25vw) rotateZ(-45deg);
+}
+.on {
+  left: 0;
+}
+.responsive {
+  display: block;
+}
+.responsive a {
+  display: block;
+  border-top: solid .4vw #000;
+  padding: 6vw 4vw;
+  position: relative;
+  margin: 0;
+  cursor: pointer;
+}
+.submenu a {
+  border: none;
+  padding: 0 0 4vw 0;
+}
+#data {
+  position: absolute;
+  bottom: 20vw;
+  left: initial;
+  right: 8vw;
+}

@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NEWS ▪ Villa Necchi Campiglio</title>
+  <title>STORIA ▪ Villa Necchi Campiglio</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/swiper.min.css">
 </head>
-<body style="background-color: #68acca">
+<body style="background-color: #92bb9c">
 
   <span id="data"><span id="date"></span><br><b>APERTO</b></span>
   <a href="home.html"><img id="logo" src="img/logo.svg"></a>
@@ -17,30 +17,41 @@
         <a href="javascript:">ESPLORA</a>
           <div class="submenu">
             <a href="stanze.html">Le stanze</a>
-            <a href="giardino.html">Il giardino</a>
+            <a href="javascript:">Il giardino</a>
             <a href="storia.html">Storia</a>
           </div>
       </div>
       <a href="eventi.html">EVENTI</a>
-      <a href="home.html#4">NEWS</a>
       <div class="drop">
         <a href="javascript:">VISITA</a>
-          <div class="submenu">
-            <a href="biglietti.html">Biglietti</a>
-            <a href="arrivare.html">Come arrivare</a>
-            <a href="javascript:" onclick="scrollBottom()">Orari</a>
-          </div>
+        <div class="submenu">
+          <a href="biglietti.html">Biglietti</a>
+          <a href="arrivare.html">Come arrivare</a>
+          <a href="javascript:" onclick="scrollBottom()">Orari</a>
+        </div>
+      <a href="home.html#4">NEWS</a>
       </div>
       <a target="_blank" href="https://sostienici.fondoambiente.it">SUPPORTA</a>
       <a href="javascript:" onclick="scrollBottom()">CONTATTI</a>
   </nav>
+
 <!--HEADER-->
-<div class="sezione blu scroll">
-  <img style="grid-area:1/3/auto/10" src="img/notizia.png">
+<div class="sezione verde">
+  <h1 style="grid-area:1/3/auto/9">Storia</h1>
+
+  <div class="swiper-container" style="grid-area:2/3/auto/10">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="img/veranda1.png"></div>
+      <div class="swiper-slide"><img src="img/veranda2.jpg"></div>
+      <div class="swiper-slide"><img src="img/veranda3.jpg"></div>
+    </div>
+    <div class="swiper-button-prev green"></div>
+    <div class="swiper-button-next green"></div>
+  </div>
 </div>
 
 <!--INFO-->
-<div class="sezione blu scroll">
+<div class="sezione verde">
   <a style="grid-area:1/3/auto/9"><img src="img/notizia-info.png"></a>
   <div class="quadrati fixed" style="grid-area:1/9/auto/auto">
     <a href="javascript:"><div class="q"><h3>News</h3><svg viewBox='0 0 36.43555 33.43555'><polygon points='19.707 0 18.293 1.414 32.586 15.707 0 15.707 0 17.707 32.479 17.707 17.314 31.979 18.686 33.436 36.436 16.729 19.707 0'/></svg></div></a>
@@ -49,7 +60,7 @@
 </div>
 
 <!--FOOTER-->
-<div class="sezione giallo scroll">
+<div class="sezione giallo">
   <h1 style="grid-area:1/3/auto/9">Visita la Villa</h1>
   <img src="img/footer2.png" style="grid-area:2/3/auto/10">
   <div class="quadrati" style="grid-area:2/9/auto/auto">

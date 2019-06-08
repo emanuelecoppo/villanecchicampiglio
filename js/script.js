@@ -8,18 +8,18 @@ document.getElementById("date").innerHTML = formatted_date;
 // NAV
 $(".drop").hover(
   function () {
-    $(this).find('.submenu').stop(true, true).slideDown('medium');
+    $(this).find('.submenu').stop(true, false).slideDown('medium');
   },
   function () {
-    $(this).find('.submenu').stop(true, true).slideUp('medium');
+    $(this).find('.submenu').stop(true, false).slideUp('medium');
   }
 );
 $(".select").hover(
   function () {
-    $(this).find('.select-content').stop(true, true).slideDown('medium');
+    $(this).find('.select-content').stop(true, false).slideDown('medium');
   },
   function () {
-    $(this).find('.select-content').stop(true, true).slideUp('medium');
+    $(this).find('.select-content').stop(true, false).slideUp('medium');
   }
 );
 
@@ -29,7 +29,7 @@ $.scrollify({
   sectionName : "",
   interstitialSection : "",
   easing: "easeOutExpo",
-  scrollSpeed: 1100,
+  scrollSpeed: 1000,
   offset : 0,
   scrollbars: true,
   standardScrollElements: "",
@@ -42,6 +42,11 @@ $.scrollify({
   afterResize:function() {},
   afterRender:function() {}
 });
+
+// SCROLL BOTTOM
+function scrollBottom() {
+  $("html, body").animate({ scrollTop: $(document).height()-720 }, 1000);
+};
 
 // HOME VERDE
  function vaso() {

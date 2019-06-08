@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#000000">
   <title>Villa Necchi Campiglio</title>
   <link rel="stylesheet" href="css/style.css">
   <style>
@@ -22,6 +23,7 @@
 
 <script src="js/jquery-3.3.1.min.js"></script>
 <script>
+  // SCALE IFRAME
   function adatta() {
     h = $(window).height();
     w = $(window).width();
@@ -33,6 +35,15 @@
   }
   adatta();
   $(window).resize(function() {adatta()} );
+
+  // REDIRECT
+  $(document).ready(function(){
+  if ($(window).width() <= 700) {
+      window.location.href = "m-home.html";
+  };
+  return false;
+});
+
 </script>
 
 </body>
