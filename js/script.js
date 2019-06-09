@@ -23,26 +23,6 @@ $(".select").hover(
   }
 );
 
-//SCROLLIFY
-$.scrollify({
-  section : ".scroll",
-  sectionName : "",
-  interstitialSection : "",
-  easing: "easeOutExpo",
-  scrollSpeed: 1000,
-  offset : 0,
-  scrollbars: true,
-  standardScrollElements: "",
-  setHeights: false,
-  overflowScroll: true,
-  updateHash: false,
-  touchScroll: true,
-  before:function() {},
-  after:function() {},
-  afterResize:function() {},
-  afterRender:function() {}
-});
-
 // SCROLL BOTTOM
 function scrollBottom() {
   $("html, body").animate({ scrollTop: $(document).height()-720 }, 1000);

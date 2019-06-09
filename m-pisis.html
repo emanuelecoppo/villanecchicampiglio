@@ -3,57 +3,62 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#000000">
   <title>La Stanza di Filippo de Pisis ▪ Villa Necchi Campiglio</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/mobile.css">
   <link rel="stylesheet" href="css/swiper.min.css">
 </head>
-<body style="background-color: #e7b5b9">
+<body style="background-color:#e7b5b9">
 
-  <span id="data"><span id="date"></span><br><b>APERTO</b></span>
-  <a href="home.html"><img id="logo" src="img/logo.svg"></a>
-  <nav class="menu">
-      <a href="home.html">HOME</a>
-      <div class="drop">
-        <a href="javascript:">ESPLORA</a>
-          <div class="submenu">
-            <a href="stanze.html">Le stanze</a>
-            <a href="giardino.html">Il giardino</a>
-            <a href="storia.html">Storia</a>
-          </div>
-      </div>
-      <a href="eventi.html">EVENTI</a>
-      <a href="home.html#4">NEWS</a>
-      <div class="drop">
-        <a href="javascript:">VISITA</a>
-          <div class="submenu">
-            <a href="biglietti.html">Biglietti</a>
-            <a href="arrivare.html">Come arrivare</a>
-            <a href="javascript:" onclick="scrollBottom()">Orari</a>
-          </div>
-      </div>
-      <a target="_blank" href="https://sostienici.fondoambiente.it">SUPPORTA</a>
-      <a href="javascript:" onclick="scrollBottom()">CONTATTI</a>
+<nav class="navbar">
+  <img src="img/logo.svg">
+  <a class="hamburger" href="javascript:">
+    <div class="stripe"></div>
+    <div class="stripe"></div>
+  </a>
+  <nav class="responsive off">
+    <a href="m-home.html">HOME</a>
+    <div class="drop">
+      <a href="javascript:">ESPLORA ></a>
+        <div class="submenu">
+          <a href="m-stanze.html">Le stanze</a>
+          <a href="m-giardino.html">Il giardino</a>
+          <a href="m-storia.html">Storia</a>
+        </div>
+    </div>
+    <a href="m-eventi.html">EVENTI</a>
+    <a class="close" href="m-home.html#news">NEWS</a>
+    <div class="drop">
+      <a href="javascript:">VISITA ></a>
+        <div class="submenu">
+          <a href="m-biglietti.html">Biglietti</a>
+          <a href="m-arrivare.html">Come arrivare</a>
+          <a class="close" href="javascript:" onclick="scrollBottom()">Orari</a>
+        </div>
+    </div>
+    <a target="_blank" href="https://sostienici.fondoambiente.it">SUPPORTA</a>
+    <a class="close" href="javascript:" onclick="scrollBottom()">CONTATTI</a>
+    <span id="data"><span id="date"></span><br><b>APERTO</b></span>
   </nav>
-<!--HEADER-->
-<div class="sezione rosso">
-  <a style="grid-area:1/3/auto/10"><img src="img/pisis-header.png"></a>
-</div>
+</nav>
 
 <!--EVENTI-->
-<div class="sezione rosso scroll" style="height:auto!important">
-  <div style="grid-area:1/3/3/10">
-    <span target="1" class="button active">LA MOSTRA</span>
-    <span target="2" class="button">I PROTAGONISTI</span>
+<div class="sezione rosso padding" style="height:auto!important">
+  <img class="margin2" src="img//mobile/pisis-header.png">
+  <div class="margin2">
+    <span target="1" class="button active">MOSTRA</span>
+    <span target="2" class="button">PROTAGONISTI</span>
     <span target="3" class="button">INFORMAZIONI</span>
   </div>
-  <img style="grid-area:2/3/auto/10; margin:27px 0 53px 0" class="div1 targetDiv" src="img/pisis-mostra.png">
-  <img style="grid-area:2/3/auto/10; margin:27px 0 53px 0" class="div2 targetDiv" src="img/pisis-protagonisti.png">
-  <img style="grid-area:2/3/auto/9; margin:27px 0 53px 0" class="div3 targetDiv" src="img/pisis-info.png">
-  <div class="quadrati fixed div3 targetDiv" style="grid-area:2/9/auto/auto; margin:27px 0">
+  <img class="div1 targetDiv margin2" src="img/mobile/pisis-mostra.png">
+  <img class="div2 targetDiv margin2" src="img/pisis-protagonisti.png">
+  <img class="div3 targetDiv margin2" src="img/pisis-info.png">
+  <div class="quadrati fixed div3 targetDiv">
     <a href="javascript:"><div class="q"><h3>Acquista<br>biglietti</h3><svg viewBox='0 0 36.43555 33.43555'><polygon points='19.707 0 18.293 1.414 32.586 15.707 0 15.707 0 17.707 32.479 17.707 17.314 31.979 18.686 33.436 36.436 16.729 19.707 0'/></svg></div></a>
     <a href="javascript:"><div class="q"><h3>Come<br>arrivare</h3><svg viewBox='0 0 36.43555 33.43555'><polygon points='19.707 0 18.293 1.414 32.586 15.707 0 15.707 0 17.707 32.479 17.707 17.314 31.979 18.686 33.436 36.436 16.729 19.707 0'/></svg></div></a>
   </div>
-  <div class="swiper-container" style="grid-area:auto/3/auto/10">
+  <div class="swiper-container">
     <div class="swiper-wrapper">
       <div class="swiper-slide"><img src="img/pisis-gallery1.jpg"><p><b>F. de Pisis</b>, <i>Natura morta con pappagallo</i>, 1942, Collezione Marino P. De Biagi.</p></div>
       <div class="swiper-slide"><img src="img/pisis-gallery2.jpg"><p><b>F. de Pisis</b>, <i>La tinca</i>, 1928, Villa Necchi Campiglio, Collezione Claudia Gian Ferrari.</p></div>
@@ -65,20 +70,20 @@
 </div>
 
 <!--FOOTER-->
-<div class="sezione giallo">
-  <h1 style="grid-area:1/3/auto/9">Visita la Villa</h1>
-  <img src="img/footer2.png" style="grid-area:2/3/auto/10">
-  <div class="quadrati" style="grid-area:2/9/auto/auto">
+<div class="sezione giallo padding" id="footer">
+  <h1>Visita la Villa</h1>
+  <div class="quadrati">
     <a href="biglietti.html"><div class="q"><h3>Acquista<br>biglietti</h3><svg viewBox='0 0 36.43555 33.43555'><polygon points='19.707 0 18.293 1.414 32.586 15.707 0 15.707 0 17.707 32.479 17.707 17.314 31.979 18.686 33.436 36.436 16.729 19.707 0'/></svg></div></a>
     <a href="arrivare.html"><div class="q"><h3>Come<br>arrivare</h3><svg viewBox='0 0 36.43555 33.43555'><polygon points='19.707 0 18.293 1.414 32.586 15.707 0 15.707 0 17.707 32.479 17.707 17.314 31.979 18.686 33.436 36.436 16.729 19.707 0'/></svg></div></a>
   </div>
+  <img src="img/mobile/footer.png">
 </div>
 
 <!--SCRIPT-->
 <script src="js/swiper.min.js"></script>
 <script src="js/jquery-3.3.1.min.js"></script>
-<!-- <script src="js/scrollify.js"></script> -->
 <script src="js/script.js"></script>
+<script src="js/mobile.js"></script>
 
 </body>
 </html>
