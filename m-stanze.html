@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#000000">
+  <title>ESPLORA ▪ Villa Necchi Campiglio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/mobile.css">
+  <link rel="stylesheet" href="css/swiper.min.css">
+</head>
+<body style="background-color:#92bb9c">
+
+<nav class="navbar">
+  <img src="img/logo.svg">
+  <a class="hamburger" href="javascript:">
+    <div class="stripe"></div>
+    <div class="stripe"></div>
+  </a>
+  <nav class="responsive off">
+    <a href="m-home.html">HOME</a>
+    <div class="drop">
+      <a href="javascript:">ESPLORA ></a>
+        <div class="submenu">
+          <a href="m-stanze.html">Le stanze</a>
+          <a href="m-giardino.html">Il giardino</a>
+          <a href="m-storia.html">Storia</a>
+        </div>
+    </div>
+    <a href="m-eventi.html">EVENTI</a>
+    <a class="close" href="m-home.html#news">NEWS</a>
+    <div class="drop">
+      <a href="javascript:">VISITA ></a>
+        <div class="submenu">
+          <a href="m-biglietti.html">Biglietti</a>
+          <a href="m-arrivare.html">Come arrivare</a>
+          <a class="close" href="javascript:" onclick="scrollBottom()">Orari</a>
+        </div>
+    </div>
+    <a target="_blank" href="https://sostienici.fondoambiente.it">SUPPORTA</a>
+    <a class="close" href="javascript:" onclick="scrollBottom()">CONTATTI</a>
+    <span id="data"><span id="date"></span><br><b>APERTO</b></span>
+  </nav>
+</nav>
+
+<!--GALLERY-->
+<div class="sezione verde padding">
+  <h1>Esplora</h1>
+  <div class="select">
+    <span class="select-button">VERANDA 🡣</span>
+    <div class="select-content">
+    <span>ATRIO</span>
+    <span>BIBLIOTECA</span>
+    <span>SALONE</span>
+    <span>VERANDA</span>
+    <span>STUDIO</span>
+    <span>FUMOIR</span>
+    <span>SALA DA<br>PRANZO</span>
+    <span>BAGNI</span>
+    <span>CAMERA<br>DEGLI SPOSI</span>
+    <span>CAMERA<br>DI NEDDA</span>
+    <span>CAMERA DEL<br>PRINCIPE</span>
+    <span>CAMERA DELLA<br>PRINCIPESSA</span>
+    </div>
+  </div>
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="img/veranda1.png"></div>
+      <div class="swiper-slide"><img src="img/veranda2.jpg"></div>
+      <div class="swiper-slide"><img src="img/veranda3.jpg"></div>
+    </div>
+    <div class="swiper-button-prev green"></div>
+    <div class="swiper-button-next green"></div>
+  </div>
+
+  <h1 style="margin-top:10vw">La Veranda</h1>
+  <img class="margin" src="img/mobile/veranda-info.png">
+
+  <h1 style="margin-top:10vw">In questa stanza</h1>
+
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="img/mobile/opera1.png"><p><b>Adolfo Wildt</b>, <i>Il puro folle (o Parsifal)</i>, 1930, fusione in bronzo. Collezione Gian Ferrari.</p></div>
+      <div class="swiper-slide"><img src="img/mobile/opera2.png"><p><b>Gino Severini</b>, <i>Nature morte au masque</i>, 1929, olio su tela. Collezione Gian Ferrari.</p></div>
+      <div class="swiper-slide"><img src="img/mobile/opera3.png"><p><b>Piero Portaluppi</b>, Dettaglio della pavimentazione, 1932-1945, marmo.</p></div>
+    </div>
+    <div style="margin-top:-11vw!important" class="swiper-button-prev green"></div>
+    <div style="margin-top:-11vw!important" class="swiper-button-next green"></div>
+  </div>
+
+  <div class="quadrati" style="margin-top:13vw">
+    <a href="javascript:"><div class="q"><h3>Il giardino</h3><svg viewBox='0 0 36.43555 33.43555'><polygon points='19.707 0 18.293 1.414 32.586 15.707 0 15.707 0 17.707 32.479 17.707 17.314 31.979 18.686 33.436 36.436 16.729 19.707 0'/></svg></div></a>
+    <a href="m-storia.html"><div class="q"><h3>Storia</h3><svg viewBox='0 0 36.43555 33.43555'><polygon points='19.707 0 18.293 1.414 32.586 15.707 0 15.707 0 17.707 32.479 17.707 17.314 31.979 18.686 33.436 36.436 16.729 19.707 0'/></svg></div></a>
+  </div>
+
+</div>
+
+<!--FOOTER-->
+<div class="sezione giallo padding" id="footer">
+  <h1>Visita la Villa</h1>
+  <div class="quadrati">
+    <a href="m-biglietti.html"><div class="q"><h3>Acquista<br>biglietti</h3><svg viewBox='0 0 36.43555 33.43555'><polygon points='19.707 0 18.293 1.414 32.586 15.707 0 15.707 0 17.707 32.479 17.707 17.314 31.979 18.686 33.436 36.436 16.729 19.707 0'/></svg></div></a>
+    <a href="m-arrivare.html"><div class="q"><h3>Come<br>arrivare</h3><svg viewBox='0 0 36.43555 33.43555'><polygon points='19.707 0 18.293 1.414 32.586 15.707 0 15.707 0 17.707 32.479 17.707 17.314 31.979 18.686 33.436 36.436 16.729 19.707 0'/></svg></div></a>
+  </div>
+  <img src="img/mobile/footer.png">
+</div>
+
+<!--SCRIPT-->
+<script src="js/swiper.min.js"></script>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/mobile.js"></script>
+
+</body>
+</html>

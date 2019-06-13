@@ -227,7 +227,6 @@ div.blu {background-color: #68acca}
   background-image: url("../img/dx-verde.png")!important;
 }
 .swiper-button-prev.green, .swiper-button-next.green {
-  transform-origin: center;
   transform: scaleX(1.6);
 }
 
