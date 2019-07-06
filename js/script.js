@@ -68,15 +68,15 @@ var swiper1 = new Swiper (".swiper-container", {
 })
 
 // EVENTI
-var eventi1 = $('#eventi1').offset().top;
-var eventi2 = $('#eventi2').offset().top;
-$(window).scroll(function() {
-  var currentScroll = $(window).scrollTop();
-  if (currentScroll >= eventi1 && currentScroll < eventi2) {
-    $('.fixed').css({position:'fixed', top:'53px', left:'1096px', 'margin-top':'0'});
-  } else if (currentScroll >= eventi2) {
-    $('.fixed').css({position:'static', 'margin-top':'720px'});
-  } else {
-    $('.fixed').css({position:'static', 'margin-top':'0'});
-  }
-});
+// var eventi1 = $('#eventi1').offset().top;
+// var eventi2 = $('#eventi2').offset().top;
+// $(window).scroll(function() {
+//   var currentScroll = $(window).scrollTop();
+//   if (currentScroll >= eventi1 && currentScroll < eventi2) {
+//     $('.fixed').css({position:'fixed', top:'53px', left:'1096px', 'margin-top':'0'});
+//   } else if (currentScroll >= eventi2) {
+//     $('.fixed').css({position:'static', 'margin-top':'720px'});
+//   } else {
+//     $('.fixed').css({position:'static', 'margin-top':'0'});
+//   }
+// });

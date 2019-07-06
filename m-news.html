@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#000000">
+  <title>NEWS ▪ Villa Necchi Campiglio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/mobile.css">
+  <link rel="stylesheet" href="css/swiper.min.css">
+</head>
+<body style="background-color:#68acca">
+
+<nav class="navbar">
+  <img src="img/logo.svg">
+  <a class="hamburger" href="javascript:">
+    <div class="stripe"></div>
+    <div class="stripe"></div>
+  </a>
+  <nav class="responsive off">
+    <a href="m-home.html">HOME</a>
+    <div class="drop">
+      <a href="javascript:">ESPLORA ></a>
+        <div class="submenu">
+          <a href="m-stanze.html">Le stanze</a>
+          <a href="m-giardino.html">Il giardino</a>
+          <a href="m-storia.html">Storia</a>
+        </div>
+    </div>
+    <a href="m-eventi.html">EVENTI</a>
+    <a class="close" href="m-home.html#news">NEWS</a>
+    <div class="drop">
+      <a href="javascript:">VISITA ></a>
+        <div class="submenu">
+          <a href="m-biglietti.html">Biglietti</a>
+          <a href="m-arrivare.html">Come arrivare</a>
+          <a class="close" href="javascript:" onclick="scrollBottom()">Orari</a>
+        </div>
+    </div>
+    <a target="_blank" href="https://sostienici.fondoambiente.it">SUPPORTA</a>
+    <a class="close" href="javascript:" onclick="scrollBottom()">CONTATTI</a>
+    <span id="data"><span id="date"></span><br><b>APERTO</b></span>
+  </nav>
+</nav>
+
+<!--NEWS-->
+<div class="sezione blu padding" id="news">
+  <h1>News</h1>
+  <a class="margin" href="m-notizia.html"><img src="img/mobile/news1.png"></a>
+  <a class="margin" href="javascript:"><img src="img/mobile/news2.png"></a>
+  <a class="margin" href="javascript:"><img src="img/mobile/news3.png"></a>
+  <a class="margin" href="javascript:"><img src="img/mobile/news4.png"></a>
+  <a class="margin" href="javascript:"><img src="img/mobile/news5.png"></a>
+  <a class="margin" href="javascript:"><img src="img/mobile/news6.png"></a>
+  <div class="quadrati">
+    <a href="javascript:"><div class="q"><h3>Archivio</h3><svg viewBox='0 0 36.43555 33.43555'><polygon points='19.707 0 18.293 1.414 32.586 15.707 0 15.707 0 17.707 32.479 17.707 17.314 31.979 18.686 33.436 36.436 16.729 19.707 0'/></svg></div></a>
+  </div>
+
+</div>
+
+<!--FOOTER-->
+<div class="sezione giallo padding" id="footer">
+  <h1>Visita la Villa</h1>
+  <div class="quadrati">
+    <a href="m-biglietti.html"><div class="q"><h3>Acquista<br>biglietti</h3><svg viewBox='0 0 36.43555 33.43555'><polygon points='19.707 0 18.293 1.414 32.586 15.707 0 15.707 0 17.707 32.479 17.707 17.314 31.979 18.686 33.436 36.436 16.729 19.707 0'/></svg></div></a>
+    <a href="m-arrivare.html"><div class="q"><h3>Come<br>arrivare</h3><svg viewBox='0 0 36.43555 33.43555'><polygon points='19.707 0 18.293 1.414 32.586 15.707 0 15.707 0 17.707 32.479 17.707 17.314 31.979 18.686 33.436 36.436 16.729 19.707 0'/></svg></div></a>
+  </div>
+  <img src="img/mobile/footer.png">
+</div>
+
+<!--SCRIPT-->
+<script src="js/swiper.min.js"></script>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/mobile.js"></script>
+
+</body>
+</html>

@@ -85,6 +85,11 @@ div.blu {background-color: #68acca}
   color: #fef0cf;
   text-align: center;
   position: relative;
+  overflow: hidden;
+}
+#video {
+  height: 100%;
+  transform: translateX(-10%);
 }
 .home-verde {
   background: url("../img/vaso.jpg") no-repeat center;
@@ -173,12 +178,13 @@ div.blu {background-color: #68acca}
   width: 100px;
   height: 100px;
   border: solid 1.25px #000;
-  border-left: none;
+  /* border-left: none; */
   position: relative;
   transition: all .2s linear;
 }
 .q h3 {
   margin-top: 13px;
+  margin-left: 11px;
   line-height: 1.1;
   transition: margin-left .2s ease-in-out;
 }
@@ -188,7 +194,7 @@ div.blu {background-color: #68acca}
   fill: #000;
 }
 .q:hover {background-color: #000}
-.q:hover h3 {margin-left: 13px}
+.q:hover h3 {margin-left: 11px}
 .giallo .q:hover {color: #fef0cf}
 .verde .q:hover {color: #92bb9c}
 .rosso .q:hover {color: #e7b5b9}
@@ -235,13 +241,14 @@ div.blu {background-color: #68acca}
 #data {
   position:fixed;
   bottom:53px;
-  left:80px
+  left: 80px;
+  /* top: 636.5px; */
 }
 #logo {
   position:fixed;
   top:53px;
   left:80px;
-  width: 180px;
+  width: 160px;
 }
 nav {
   position: fixed;
@@ -249,7 +256,7 @@ nav {
   left: 117px;
   width: 180px;
   font-family: MonoMedium;
-  font-size: 20px;
+  font-size: 18px;
 }
 nav a {
   margin-bottom: 17px;
@@ -259,7 +266,7 @@ nav a {
   margin-top: 17px;
   margin-left: 20px;
   font-family: MonoRegular;
-  font-size: 15px;
+  font-size: 13px;
   display: none;
   text-transform: uppercase;
   position: relative;
