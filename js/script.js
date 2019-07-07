@@ -30,7 +30,7 @@ function scrollBottom() {
 
 // HOME VERDE
  function vaso() {
-   $('.home-verde').css('background-image','url(./img/vaso.jpg)')
+   $('.home-verde').css('background-image','url(./img/home.jpeg)')
  }
  $('.stanze').hover(function() {
    $('.home-verde').css('background-image','url(./img/stanze.jpg)')}, vaso);

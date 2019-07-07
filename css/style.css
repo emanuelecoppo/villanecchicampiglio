@@ -80,8 +80,8 @@ div.rosso {background-color: #e7b5b9}
 div.blu {background-color: #68acca}
 
 .home-header {
-  background: url("../img/home.jpeg") no-repeat center;
-  background-size: cover;
+  /* background: url("../img/home.jpeg") no-repeat center;
+  background-size: cover; */
   color: #fef0cf;
   text-align: center;
   position: relative;
@@ -92,7 +92,7 @@ div.blu {background-color: #68acca}
   transform: translateX(-10%);
 }
 .home-verde {
-  background: url("../img/vaso.jpg") no-repeat center;
+  background: url("../img/home.jpeg") no-repeat center;
   background-size: cover;
   color: #fef0cf;
   padding: 27px;
